@@ -4,37 +4,19 @@ export default class mapa extends Phaser.Scene {
   }
 
   preload () {
-    this.load.tilemapTiledJSON('mapa', 'assets/mapa/mapa.json')
+    this.load.tilemapTiledJSON('mapa', 'assets/mapa--mapa/mapa.json')
     this.load.image('abertura', 'assets/abertura.png')
-    this.load.image('baixo', 'assets/baixo.png')
-    this.load.image('cima', 'assets/cima.png')
-    this.load.image('direita', 'assets/direita.png')
-    this.load.image('esquerda', 'assets/esquerda.png')
     this.load.image('labirinto', 'assets/labirinto.png')
     this.load.image('sala', 'assets/sala.png')
+    this.load.image('personagem', 'assets/.personagem-nay.png')
 
-    this.load.spritesheet('personagem', 'assets/personagem.png', {
+    this.load.spritesheet('personagem', 'assets/personagem-nay.png', {
       frameWidth: 64,
       frameHeight: 64
     })
 
-    this.load.spritesheet('cima', 'assets/cima.png', {
-      frameWidth: 64,
-      frameHeight: 64
-    })
-    this.load.spritesheet('direita', 'assets/direita.png', {
-      frameWidth: 64,
-      frameHeight: 64
-    })
-    this.load.spritesheet('esquerda', 'assets/esquerda.png', {
-      frameWidth: 64,
-      frameHeight: 64
-    })
-    this.load.spritesheet('baixo', 'assets/baixo.png', {
-      frameWidth: 64,
-      frameHeight: 64
-    })
   }
+
 
   create () {
     this.tilemapMapa = this.make.tilemap({ key: 'mapa' })
