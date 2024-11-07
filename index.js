@@ -3,6 +3,7 @@ import abertura from './abertura.js'
 import sala from './sala.js'
 import mapa from './mapa.js'
 
+
 class Game extends Phaser.Game {
   constructor () {
     super(config)

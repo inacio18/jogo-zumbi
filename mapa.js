@@ -4,11 +4,12 @@ export default class mapa extends Phaser.Scene {
   }
 
   preload () {
-    this.load.tilemapTiledJSON('mapa', 'assets/mapa--mapa/mapa.json')
-    this.load.image('abertura', 'assets/abertura.png')
-    this.load.image('labirinto', 'assets/labirinto.png')
-    this.load.image('sala', 'assets/sala.png')
-    this.load.image('personagem', 'assets/.personagem-nay.png')
+    this.load.tilemapTiledJSON('mapa', 'assets/mapa /mapa.json')
+    this.load.image('abertura', 'assets/arquivos png /abertura-jogo.png')
+    this.load.image('labirinto', 'assets/arquivos png /labirinto.png')
+    this.load.image('sala', 'assets/arquivos png /sala.png')
+    this.load.image('personagem', 'assets/personagens/personagem-nay.png')
+    
 
     this.load.spritesheet('personagem', 'assets/personagem-nay.png', {
       frameWidth: 64,
@@ -21,7 +22,7 @@ export default class mapa extends Phaser.Scene {
   create () {
     this.tilemapMapa = this.make.tilemap({ key: 'mapa' })
 
-    this.tilesetEstrutura = this.tilemapMapa.addTilesetImage('mapa lab-zumbi')
+    this.tilesetEstrutura = this.tilemapMapa.addTilesetImage('mapa jogo.tmj')
 
     this.anims.create({
       key: 'parado',
