@@ -15,9 +15,9 @@ export default {
       ,
       debug: true
     }
- }
+  }
 
- ,
+  ,
   scale: {
     mode: Phaser.Scale.FIT,
       parent: 'game-container',
@@ -25,4 +25,20 @@ export default {
       width: 800,
       height: 450
   }
+}
+
+*,
+html {
+  margin: 0;
+  padding: 0;
+  background-color: #000000;
+}
+
+.center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
 }
