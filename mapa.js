@@ -4,25 +4,36 @@ export default class mapa extends Phaser.Scene {
   }
 
   preload () {
-    this.load.tilemapTiledJSON('mapa', 'assets/mapa /mapa.json')
-    this.load.image('abertura', 'assets/arquivos png /abertura-jogo.png')
-    this.load.image('labirinto', 'assets/arquivos png /labirinto.png')
-    this.load.image('sala', 'assets/arquivos png /sala.png')
-    this.load.image('personagem', 'assets/personagens/personagem-nay.png')
-    
+    this.load.tilemapTiledJSON('mapa', 'assets/mapa/mapa.json')
+    this.load.image('labirinto', 'assets/mapa/labirinto.png')
 
-    this.load.spritesheet('personagem', 'assets/personagem-nay.png', {
+    this.load.spritesheet('personagem', 'assets/personagens/nay.png', {
       frameWidth: 64,
       frameHeight: 64
     })
 
+    this.load.spritesheet('cima', 'assets/cima.png', {
+      frameWidth: 64,
+      frameHeight: 64
+    })
+    this.load.spritesheet('baixo', 'assets/baixo.png', {
+      frameWidth: 64,
+      frameHeight: 64
+    })
+    this.load.spritesheet('esquerda', 'assets/esquerda.png', {
+      frameWidth: 64,
+      frameHeight: 64
+    })
+    this.load.spritesheet('direita', 'assets/direita.png', {
+      frameWidth: 64,
+      frameHeight: 64
+    })
   }
-
 
   create () {
     this.tilemapMapa = this.make.tilemap({ key: 'mapa' })
-
-    this.tilesetEstrutura = this.tilemapMapa.addTilesetImage('mapa jogo.tmj')
+    this.tilesetLabirinto = this.tilemapMapa.addTilesetImage('labirinto')
+    this.layerLabirinto = this.tilemapMapa.createLayer('labirinto', [this.tilesetLabirinto])
 
     this.anims.create({
       key: 'parado',
