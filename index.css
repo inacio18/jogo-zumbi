@@ -1,28 +1,15 @@
-export default {
+*,
+html {
+  margin: 0;
+  padding: 0;
+  background-color: #000000;
+}
 
-  type: Phaser AUTO,
-  width: 800,
-  height: 450,
-  parent: 'game-container',
-  physics: {
-
-    default: 'arcade',
-    arcade: {
-      gravity: {
-        y: 0
-      }
-
-      ,
-      debug: true
-    }
- }
-
- ,
-  scale: {
-    mode: Phaser.Scale.FIT,
-      parent: 'game-container',
-      autoCenter: Phaser.Scale.CENTER_BOTH,
-      width: 800,
-      height: 450
-  }
+.center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
 }
