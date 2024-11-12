@@ -58,6 +58,6 @@ export default class mapa extends Phaser.Scene {
     this.esquerda.setInteractive()
     this.esquerda.on('pointerdown', () => { this.personagem.setVelocityX(-20) })
     this.direita.setInteractive()
-    this.direita.on('pointerdown', () => { this.personagem.setVelocityX(-20) })
+    this.direita.on('pointerdown', () => { this.personagem.setVelocityX(20) })
   }
 }
