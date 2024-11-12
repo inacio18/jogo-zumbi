@@ -4,14 +4,11 @@ Premisssa do jogo:
 
 Nome : labzumbi
 
-Em um mundo pós-apocalíptico, dois personagens estão presos em lados opostos de um labirinto. A maior parte da população foi transformada em zumbis, e para sobreviver, eles precisam encontrar um caminho até o outro enquanto enfrentam os mortos-vivos e resolvem pequenos desafios no caminho. O labirinto é fixo, mas cheio de obstáculos, corredores e zumbis.
+Em um mundo pós-apocalíptico, dois personagen estão preso em lados opostos de um labirinto. A maior parte da população foi transformada em zumbis, e para sobreviver, eles precisam encontrar um caminho até o outro enquanto enfrentam os mortos-vivos e resolvem pequenos desafios no caminho. O labirinto é fixo, mas cheio de obstáculos, corredores e zumbis.
 
 Personagens:
 
 Personagem Nay : Especialista em resolver problemas e traçar caminhos. Ele(a) é mais ágil e pode ativar mecanismos, abrir portas ou mover obstáculos para avançar.
-
-Personagem Kelvin : Forte e habilidoso(a) em combate. Ele(a) enfrenta diretamente os zumbis, protege o outro personagem e é responsável por eliminar as ameaças.
-
 
 Dinâmica do Jogo:
 
@@ -36,7 +33,7 @@ Coletadas ao derrotar zumbis ou encontrar cofres secretos. Elas podem ser usadas
 
 Poderes e Habilidades:
 
-Os personagens podem usar as moedas para melhorar suas habilidades. Por exemplo, o personagem Nay pode adquirir ferramentas para desbloquear portas mais rápido, enquanto o personagem Kelvin pode comprar armas mais poderosas para lidar com zumbis mais fortes.
+Os personagens podem usar as moedas para melhorar suas habilidades. Por exemplo, o personagem Nay pode adquirir ferramentas para desbloquear portas mais rápido.
 
 
 Fim da Jornada:
